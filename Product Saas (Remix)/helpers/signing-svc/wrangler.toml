@@ -1,0 +1,10 @@
+name = "signing-svc"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Set via: wrangler secret put DPF_WEBHOOK_SHARED_SECRET_CURRENT
+# Set via: wrangler secret put INTERNAL_TOKEN
+# Set via (during rotation): wrangler secret put DPF_WEBHOOK_SHARED_SECRET_PREVIOUS
+
+[observability]
+enabled = true
